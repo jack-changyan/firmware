@@ -165,7 +165,7 @@ class LGFX : public lgfx::LGFX_Device
             auto cfg = _panel_instance.config(); // Gets a structure for display panel settings.
 
             cfg.pin_cs = ST7789_CS; // Pin number where CS is connected (-1 = disable)
-            cfg.pin_rst = -1;       // Pin number where RST is connected  (-1 = disable)
+            cfg.pin_rst = ST7789_RESET;       // Pin number where RST is connected  (-1 = disable)
             cfg.pin_busy = -1;      // Pin number where BUSY is connected (-1 = disable)
 
             // The following setting values ​​are general initial values ​​for each panel, so please comment out any
